@@ -25,7 +25,7 @@ class Perceptron(object):
              # at random
             self.network = []
         else:
-            # TODO Exercise ? Load an existing network
+            # TODO Bonus Load an existing network
             self.load(weights)
 
 
