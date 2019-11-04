@@ -21,8 +21,8 @@ class Perceptron(object):
 
         if weights is None:
              # TODO Exercise 1 Initalize a new network containing 
-             # numberOfNeurons neurons each with a different position chosen
-             # at random
+             # numberOfNeurons Neuron objects each with a different position chosen
+             # at random you can use the generatePositionList method below to help you.
             self.network = []
         else:
             # TODO Bonus Load an existing network
@@ -81,7 +81,7 @@ class Perceptron(object):
 
     # TODO Exercise 4: Implement the error calculation function
     def calcError(self, labels, results):
-        """Compute the number of label/result pairs that are not equal and 
+        """Compute the number of (expected result/actual result) pairs that are not equal and
            return the result.
         
         Arguments:
@@ -116,7 +116,6 @@ class Perceptron(object):
         Returns:
             list(int) -- The forward pass results for each input image
         """
-
         return []
 
     # TODO Bonus: write the save and load functions that will allow you to save

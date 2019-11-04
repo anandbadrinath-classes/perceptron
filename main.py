@@ -426,6 +426,11 @@ def fullTest():
     per = Perceptron(64, 8, 8)
     per.train(trainImages, labels, 10000)
     results = per.test(testImages)
+    for image, result in zip(testImages,results):
+        cv2.imshow("test",image*255)
+        print(result)
+        cv2.waitKey(0)
+
     print(results)
    
 
@@ -437,5 +442,5 @@ if __name__ == "__main__":
     # exercise4()
     # exercise5()
     # exercise6()
-    # fullTest()
+    fullTest()
     # bonus()
