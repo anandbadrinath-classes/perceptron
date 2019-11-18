@@ -20,7 +20,7 @@ class Perceptron(object):
         """
 
         if weights is None:
-             # TODO Exercise 1 Initalize a new network containing 
+             # TODO Exercise 1 Initialize a new network containing
              # numberOfNeurons Neuron objects each with a different position chosen
              # at random you can use the generatePositionList method below to help you.
             self.network = []
@@ -56,7 +56,7 @@ class Perceptron(object):
     def forwardPass(self, image):
         """Takes a binary image as input, computes the weighted sum of the
             of the products each neuron weight with the associated pixel value 
-            and activates the neuron if the pixel value is 1.
+            and sets the neuron's active property to True if the pixel value is 1.
             It then returns -1 if the weighted sum is negative, 0 if the 
             weighted sum is 0 and +1 if the weighted sum is positive.
         
